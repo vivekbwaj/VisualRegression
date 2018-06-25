@@ -14,10 +14,6 @@
     "orb-reference": "cross-env BS_ENV=orb BS_PATHSFILE=paths BS_REFHOST=orb  backstop reference --configPath=\"node backstop.js\" ",
     "orb-test": "cross-env BS_ENV=orb BS_PATHSFILE=paths BS_TESTHOST=orb  backstop test --configPath=\"node backstop.js\" "
   },
-  "repository": {
-    "type": "git",
-    "url": "https://Vivek.Bhardwaj@stash.aws.beteasy.com.au:8443/scm/poc/crownbet.visualregression.git"
-  },
   "author": "Vivek Bhardwaj",
   "license": "ISC",
   "eslintIgnore": [
