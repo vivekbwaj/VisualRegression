@@ -1,0 +1,36 @@
+{
+  "name": "crownbet.visualregression",
+  "version": "1.0.0",
+  "description": "For basic steps follow http://automationtipsntricks.blogspot.com.au/search/label/BackstopJS",
+  "main": "node backstop.js",
+  "scripts": {
+    "test": "echo \"try npm scripts\" ",
+    "lint": "eslint **/*.js --fix",
+    "prod-reference": "cross-env BS_ENV=prod BS_PATHSFILE=paths BS_REFHOST=prod  backstop reference --configPath=\"node backstop.js\" ",
+    "prod-test": "cross-env BS_ENV=prod BS_PATHSFILE=paths BS_TESTHOST=prod  backstop test --configPath=\"node backstop.js\" ",
+    "prod-approve": "cross-env BS_ENV=prod BS_PATHSFILE=paths BS_TESTHOST=prod  backstop approve --configPath=\"node backstop.js\" ",
+    "uat-reference": "cross-env BS_ENV=uat BS_PATHSFILE=paths BS_REFHOST=uat  backstop reference --configPath=\"node backstop.js\" ",
+    "uat-test": "cross-env BS_ENV=uat BS_PATHSFILE=paths BS_TESTHOST=uat  backstop test --configPath=\"node backstop.js\" ",
+    "orb-reference": "cross-env BS_ENV=orb BS_PATHSFILE=paths BS_REFHOST=orb  backstop reference --configPath=\"node backstop.js\" ",
+    "orb-test": "cross-env BS_ENV=orb BS_PATHSFILE=paths BS_TESTHOST=orb  backstop test --configPath=\"node backstop.js\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Vivek.Bhardwaj@stash.aws.beteasy.com.au:8443/scm/poc/crownbet.visualregression.git"
+  },
+  "author": "Vivek Bhardwaj",
+  "license": "ISC",
+  "eslintIgnore": [
+    "***.js",
+    "***.js",
+    "backstop_data/*_html_report/"
+  ],
+  "devDependencies": {
+    "backstopjs": "^3.2.16",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0"
+  },
+  "dependencies": {
+    "cross-env": "^5.1.6"
+  }
+}
